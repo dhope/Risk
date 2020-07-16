@@ -63,17 +63,17 @@ ui <-  navbarPage("Navbar page", id = "tabs",
 ),
 tabPanel("Settings",
          flowLayout(
-             sliderInput("risk_drive_highway", "Risk highway per 1000km",min = 0, max = 0.01, value = 2*5.1/(1.60934*1000000000)*1000),
-             sliderInput("risk_drive_primary", "Risk primary road per 1000km",min = 0, max = 0.01, value = 1e-8),
-             sliderInput("risk_drive_secondary", "Risk secondary road per 1000km",min = 0, max = 0.01, value = 1e-7),
-             sliderInput("risk_flight_per_flight", "Risk per flight commercial air",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_flight_per_flight_wheel", "Risk per flight small aircraft",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_flight_per_flight_float", "Risk per flight float plane",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_per_heli_landing", "Risk per helicopter landing",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_per_100m_walking", "Risk of walking 100m",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_night_hotel", "Risk of night in hotel",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_night_cabin", "Risk of night in cabin",min = 0, max = 0.01, value = 1e-6),
-             sliderInput("risk_bears", "Risk multiplier for bear presence",min = 0, max = 100, value = 2)
+             numericInput("risk_drive_highway", "Risk highway per 1000km",min = 0, max = 0.01, value = 2*5.1/(1.60934*1000000000)*1000),
+             numericInput("risk_drive_primary", "Risk primary road per 1000km",min = 0, max = 0.01, value = 1e-8),
+             numericInput("risk_drive_secondary", "Risk secondary road per 1000km",min = 0, max = 0.01, value = 1e-7),
+             numericInput("risk_flight_per_flight", "Risk per flight commercial air",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_flight_per_flight_wheel", "Risk per flight small aircraft",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_flight_per_flight_float", "Risk per flight float plane",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_per_heli_landing", "Risk per helicopter landing",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_per_100m_walking", "Risk of walking 100m",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_night_hotel", "Risk of night in hotel",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_night_cabin", "Risk of night in cabin",min = 0, max = 0.01, value = 1e-6),
+             numericInput("risk_bears", "Risk multiplier for bear presence",min = 0, max = 100, value = 2)
              # sliderInput("risk_night_cabin", "Risk of night in cabin",min = 0, max = 0.01, value = 1e-6),
              
              # actionButton("updateSettings", "Update Settings")
